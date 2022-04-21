@@ -20,3 +20,5 @@ int main(int argc, char *argv[])
         }
         printf(longest);
     }
+     return EXIT_SUCCESS;
+}
