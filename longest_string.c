@@ -4,13 +4,7 @@
 
 int main(int argc, char *argv[])
 {
-    if (argc == 1)
-        printf("");
-    else if (argc == 2)
-        printf(argv[1]);
-    else if (argc > 2)
-    {
-        char *longest = argv[1];
+        char *longest = "\n";
         for (int i = 1; i < argc; i++)
         {
             if (strlen(argv[i]) > strlen(longest))
@@ -18,7 +12,6 @@ int main(int argc, char *argv[])
                 longest = argv[i];
             }
         }
-        printf(longest);
-    }
+        puts(longest);
      return EXIT_SUCCESS;
 }
