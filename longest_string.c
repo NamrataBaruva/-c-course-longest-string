@@ -4,7 +4,7 @@
 
 int main(int argc, char *argv[])
 {
-        char *longest = "\n";
+        char *longest = "";
         for (int i = 1; i < argc; i++)
         {
             if (strlen(argv[i]) > strlen(longest))
